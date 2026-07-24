@@ -1,0 +1,24 @@
+
+  "name": "website-pertama-aku",
+  "version": "1.0.0",
+  "description": "Website pertama saya",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tikfebriantii007-cmyk/website-pertama-aku.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tikfebriantii007-cmyk/website-pertama-aku/issues"
+  },
+  "homepage": "https://github.com/tikfebriantii007-cmyk/website-pertama-aku#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

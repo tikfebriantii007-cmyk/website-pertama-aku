@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pertamaku 🚀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">🚀 WebKu</div>
+            <ul class="nav-links">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#keahlian">Keahlian</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="hero">
+        <div class="hero-content">
+            <h1>Halo! Saya <span class="highlight">Developer Baru</span> 👋</h1>
+            <p>Ini adalah website pertama saya yang dibuat dengan Node.js dan di-deploy ke Vercel!</p>
+            <button class="btn" onclick="ambilSalam()">🕐 Cek Salam Otomatis</button>
+            <div id="hasil-salam" class="salam-box"></div>
+        </div>
+    </section>
+
+    <!-- TENTANG SECTION -->
+    <section id="tentang" class="tentang">
+        <h2>📖 Tentang Saya</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-icon">🎓</div>
+                <h3>Pelajar</h3>
+                <p>Sedang belajar pemrograman web dari nol. Satu langkah kecil menuju developer hebat!</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💻</div>
+                <h3>Pemrograman</h3>
+                <p>Mulai belajar HTML, CSS, JavaScript, dan Node.js untuk membuat website keren.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🚀</div>
+                <h3>Semangat</h3>
+                <p>Terus belajar dan berkembang setiap hari. Tidak ada yang mustahil!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEAHLIAN SECTION -->
+    <section id="keahlian" class="keahlian">
+        <h2>⚡ Keahlian</h2>
+        <div class="skill-container">
+            <div class="skill">
+                <div class="skill-info">
+                    <span>HTML</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-info">
+                    <span>CSS</span>
+                    <span>60%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 60%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-info">
+                    <span>JavaScript</span>
+                    <span>50%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 50%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-info">
+                    <span>Node.js</span>
+                    <span>40%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 40%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK SECTION -->
+    <section id="kontak" class="kontak">
+        <h2>📬 Hubungi Saya</h2>
+        <form class="contact-form" onsubmit="kirimPesan(event)">
+            <input type="text" id="nama" placeholder="Nama kamu" required>
+            <input type="email" id="email" placeholder="Email kamu" required>
+            <textarea id="pesan" placeholder="Tulis pesan..." required></textarea>
+            <button type="submit" class="btn">Kirim Pesan 📨</button>
+        </form>
+        <div id="form-result"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Dibuat dengan ❤️ oleh Developer Baru | 2025</p>
+        <p>Powered by Node.js & Vercel</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
